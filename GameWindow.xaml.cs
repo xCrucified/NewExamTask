@@ -46,7 +46,7 @@ namespace NewExamTask
 
         private void Border_Pause(object sender, MouseButtonEventArgs e)
         {
-            this.Opacity = 69;
+            
         }
     }
 }

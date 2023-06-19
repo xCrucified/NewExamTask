@@ -9,18 +9,6 @@
 
         <SolidColorBrush x:Key="Border" />
 
-        <!--<SolidColorBrush x:Key="Tile2" Color="#EEE4DA"/>
-        <SolidColorBrush x:Key="Tile4" Color="#F2B179"/>
-        <SolidColorBrush x:Key="Tile8" Color="#F59563"/>
-        <SolidColorBrush x:Key="Tile16" Color="#F67C5F"/>
-        <SolidColorBrush x:Key="Tile32" Color="#F65E3B"/>
-        <SolidColorBrush x:Key="Tile64" Color="#EDCF72"/>
-        <SolidColorBrush x:Key="Tile128" Color="#EDCC61"/>
-        <SolidColorBrush x:Key="Tile256" Color="#EDC850"/>
-        <SolidColorBrush x:Key="Tile512" Color="#EDC53F"/>
-        <SolidColorBrush x:Key="Tile1024" Color="#EDC22E"/>
-        <SolidColorBrush x:Key="Tile2048" Color="#3C3A32"/>-->
-
         <Style x:Key="BorderMenuStyle" TargetType="Border">
             <Setter Property="Background" Value="DimGray"/>
             <Setter Property="CornerRadius" Value="10"/>

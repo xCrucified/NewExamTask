@@ -30,8 +30,8 @@
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
             <StackPanel Grid.ColumnSpan="2" Grid.RowSpan="2">
-                <Border  Style="{DynamicResource BorderGameStyle}" VerticalAlignment="Top" MouseLeftButtonDown="Border_Pause">
-                    <Label Content="Pause" Style="{DynamicResource LabelStyle}" Foreground="Gray"/>
+                <Border  Style="{DynamicResource BorderGameStyle}" VerticalAlignment="Top">
+                    <Label Content="2048" Style="{DynamicResource LabelStyle}" Foreground="Gray"/>
                 </Border>
                 <Border Style="{DynamicResource BorderGameStyle}" MouseLeftButtonDown="Border_ExitBtn">
                     <Label Content="Exit" Style="{DynamicResource LabelStyle}" Foreground="Gray"/>
@@ -64,7 +64,13 @@
                         <RowDefinition />
                         <RowDefinition />
                     </Grid.RowDefinitions>
+                    
+                    
+                    
+                    
                 </Grid>
+                
+                
             </Border>
         </Grid>
     </Border>

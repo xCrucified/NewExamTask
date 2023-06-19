@@ -13,21 +13,23 @@ namespace NewExamTask
 {
      public class ViewModel : INotifyPropertyChanged
      {
-        private ObservableCollection<string> borders;
+        private ObservableCollection<string> tiles;
 
-        public ObservableCollection<string> Borders
+
+
+        public ObservableCollection<string> Tiles
         {
-            get { return borders; }
+            get { return tiles; }
             set 
             {
-                borders = value;
-                OnPropertyChanged(nameof(borders)); 
+                tiles = value;
+                OnPropertyChanged(nameof(tiles)); 
             }
         }
 
         public ViewModel()
         {
-            Borders = new ObservableCollection<string>();
+            Tiles = new ObservableCollection<string>();
 
             Random random = new Random();
 
