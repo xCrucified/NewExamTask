@@ -38,10 +38,15 @@ namespace NewExamTask
 
         private void Border_ExitBtn(object sender, MouseButtonEventArgs e)
         {
-            this.Close();
+            this.Hide();
+
+            MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
         }
 
-            
-    
+        private void Border_Pause(object sender, MouseButtonEventArgs e)
+        {
+            this.Opacity = 69;
+        }
     }
 }

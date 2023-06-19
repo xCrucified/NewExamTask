@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NewExamTask"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="600"
+        Title="Menu" Height="500" Width="600"
         WindowStartupLocation="CenterScreen">
     
     <Border CornerRadius="10"  Background="Wheat" >
@@ -29,11 +29,11 @@
                     <Label Style="{StaticResource LabelStyle}" Content="New Game"/>
                 </Border>
 
-                <Border Style="{StaticResource BorderMenuStyle}" >
+                <Border Style="{StaticResource BorderMenuStyle}" MouseLeftButtonDown="Border_Rules" >
                     <Label Style="{StaticResource LabelStyle}" Content="How To Play"/>
                 </Border>
 
-                <Border Style="{StaticResource BorderMenuStyle}">
+                <Border Style="{StaticResource BorderMenuStyle}" MouseLeftButtonDown="Border_ChangeDifficult">
                     <Label Style="{StaticResource LabelStyle}" Content="Choice Difficult"/>
                 </Border>
 

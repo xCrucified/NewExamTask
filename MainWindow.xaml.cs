@@ -20,9 +20,11 @@ namespace NewExamTask
     /// </summary>
     public partial class MainWindow : Window
     {
+        ViewModel viewModel;
         public MainWindow()
         {
             InitializeComponent();
+            viewModel = new ViewModel();
         }
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -35,6 +37,24 @@ namespace NewExamTask
         private void Border_Exit(object sender, MouseButtonEventArgs e)
         {
             this.Close();
+        }
+
+        private void Border_ChangeDifficult(object sender, MouseButtonEventArgs e)
+        {
+            Difficults difficults = new Difficults();
+            difficults.Show();
+        }
+
+        private void Border_Rules(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show(@"
+In this game, the player must combine tiles containing the
+same numbers until they reach the number 2048.
+The tiles can contain only integer values starting from 2,
+and that are a power of two, like 2, 4, 8, 16,
+32, and so on. Ideally, the player should reach the 2048
+tile within the smallest number of steps.");
+
         }
     }
 }
